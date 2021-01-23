@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000000;
+    color: #fff;
+    opacity: 0.8;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0px;
+    padding: 0 30px;
+    transition: 0.5s;
+}
+
+#home a {
+  color: #fff;
+}
+
+.navbar ul a {
+    color: #fff;
+    padding: 10px 10px;
+    margin: 0 5px;
+    background-color: #0284d0;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    border-bottom: #fff 2px solid;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar .logo {
+    font-weight: 400;
+}
+
+/* Header */
+.hero {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  background: #333;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.hero .content h1 {
+  font-size: 55px;
+}
+
+.hero .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+
+
+
+
+.list {
+  margin: 50px;
+  color: #333;
+  height: 100vh;
+  z-index: 30;
+}
+
+.list h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 30px 0px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.list iframe {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  height: 75%;
+  text-align: center;
+  justify-content: center;
+}
+
+@media(max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      height: 120px;
+      padding: 0px;
+  }
+
+  .navbar a {
+      padding: 10px 5px;
+      margin: 0 3px;
+  }
+
+  .flex-items {
+      flex-direction: column;
+  }
+
+  .flex-columns .column, .flex-grid .column {
+      flex: 100%;
+      max-width: 100%;
+  }
+
+  .team img {
+      width: 70%;
+  }
+}
