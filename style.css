@@ -131,7 +131,7 @@ img {
   justify-content: center;
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 400px) {
   .navbar {
       flex-direction: column;
       height: 110px;
@@ -139,7 +139,6 @@ img {
       margin: 0px;
       flex-wrap: wrap;
   }
-
   .navbar ul a {
     margin: 0px 2px;
     padding: 1px 2px;
@@ -150,17 +149,24 @@ img {
     align-items: center;
     justify-content: center;
   }
+}
 
-  .flex-items {
+@media(max-width: 1200px) {
+  .navbar {
       flex-direction: column;
+      height: 110px;
+      padding: 0px;
+      margin: 0px;
+      flex-wrap: wrap;
   }
-
-  .flex-columns .column, .flex-grid .column {
-      flex: 100%;
-      max-width: 100%;
+  .navbar ul a {
+    margin: 10px 2px;
+    padding: 5px 7px;
+    flex: 1 1 50%;
   }
-
-  .team img {
-      width: 70%;
+  .navbar ul {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
